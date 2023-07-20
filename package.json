@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jpeg-js": "^0.4.4",
+    "pureimage": "^0.3.17"
+  }
+}
