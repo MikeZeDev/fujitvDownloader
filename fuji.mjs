@@ -4,7 +4,7 @@ import JPEG from 'jpeg-js';
 import fs from 'fs';
 
 async function main() {
-    const viewerurl = "https://manga.fod.fujitv.co.jp/viewer/1327595/BT000132759500700701/";
+    const viewerurl = "https://manga.fod.fujitv.co.jp/viewer/1254151/BT000125415100100101/";
 
     //Get token and page data
     const bookid = viewerurl.match(/viewer\/(\d+)/)[1];
@@ -20,7 +20,7 @@ async function main() {
     const keys = pageData.pages_data.keys;
 
     //download and unscramble pages
-    for ( let pageindex = 1; pageindex <= pageData.book_data.spine.length; pageindex++) {
+    for ( let pageindex = 1; pageindex <= pageData.book_data.page_count; pageindex++) {
         console.log(`Page ${pageindex}/${pageData.book_data.page_count}`);
         let url = pageData.GUARDIAN_SERVER+ '/'+ pageData.book_data.s3_key + pageindex + '.jpg';
         url += '?'+pageData.ADDITIONAL_QUERY_STRING;
