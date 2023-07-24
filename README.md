@@ -3,7 +3,7 @@ POC download for fujitv mangas
 
 Installation: 
 
-* Download source code, unzip ip
+* Download source code, unzip zip
 * Install NodeJS
 * Run ```npm install``` in source folder to install dependencies
 
