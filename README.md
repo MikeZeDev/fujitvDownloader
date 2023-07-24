@@ -7,7 +7,7 @@ Installation:
 * Install NodeJS
 * Run ```npm install``` in source folder to install dependencies
 
-  Usage : 
+Usage : 
 * change viewerurl inside script
 * launch it using ``` node fuji.mjs ```
 
